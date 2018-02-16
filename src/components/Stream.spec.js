@@ -1,5 +1,5 @@
 import React from "react"
-import Stream from './function/Stream';
+import Stream from './Stream';
 import { shallow } from 'enzyme';
 
 describe('Stream', () => {

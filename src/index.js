@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import configureStore from './stores/configureStore';
 import * as actions from './actions';
-import Stream from './components/function/Stream';
+import Stream from './components/Stream';
 
 const tracks = [
   {
