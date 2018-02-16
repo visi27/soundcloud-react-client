@@ -1,0 +1,1 @@
+Minimal React, Webpack, Babel boilerplate built from tutorial on [robinwieruch.de](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)
