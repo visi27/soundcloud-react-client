@@ -1,23 +1,23 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React from 'react'
+import { connect } from 'react-redux'
 
-function Stream({ tracks = [] }) {
+function Stream ({tracks = []}) {
   return (
     <div>
       {
         tracks.map((track, key) => {
-          return <div className="track" key={key}>{track.title}</div>;
+          return <div className="track" key={key}>{track.title}</div>
         })
       }
     </div>
-  );
+  )
 }
 
-function mapStateToProps(state) {
-  const tracks = state.track;
+function mapStateToProps (state) {
+  const tracks = state.track
   return {
-    tracks
+    tracks,
   }
 }
 
-export default connect(mapStateToProps)(Stream);
+export default connect(mapStateToProps)(Stream)

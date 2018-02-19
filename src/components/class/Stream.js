@@ -1,13 +1,13 @@
-import React from "react"
+import React from 'react'
 
 class Stream extends React.Component {
   constructor () {
-    super();
-    this.state = {};
+    super()
+    this.state = {}
   }
 
-  render() {
-    const { tracks = [] } = this.props;
+  render () {
+    const {tracks = []} = this.props
 
     return (
       <div>
@@ -15,10 +15,10 @@ class Stream extends React.Component {
           tracks.map((track, key) => {
             return (
               <div className="track" key={key}>
-              {track.title}
-              <button onClick={() => this.setState({[key]: !this.state[key]})} type="button">
-                { this.state[key] ? "Dislike" : "Like" }
-              </button>
+                {track.title}
+                <button onClick={() => this.setState({[key]: !this.state[key]})} type="button">
+                  {this.state[key] ? 'Dislike' : 'Like'}
+                </button>
               </div>
             )
           })
@@ -28,4 +28,4 @@ class Stream extends React.Component {
   }
 }
 
-export default Stream;
+export default Stream
