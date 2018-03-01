@@ -1,4 +1,1 @@
-extends: standard
-"plugins": [
-  "react",                                                                                                           
-]
+extends: ["standard", "react"]
